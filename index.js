@@ -22,7 +22,7 @@ switch (activeStep) {
         break;
     case "My Experience":
         console.log('not it');
-
+        // pop up with work experience, education, etc.
         break;
 }
 
