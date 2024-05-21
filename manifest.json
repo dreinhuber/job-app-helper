@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Borderify",
+    "version": "1.0",
+
+    "description": "Mozilla tutorial - adds a red border to all webpages matching mozilla.org",
+
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.myworkdayjobs.com/*",
+                "*://*.mozilla.org/*",
+                "*://*.youtube.com/*",
+                "*://*.wikipedia.org/*",
+                "*://*.github.com/*"
+            ],
+            "js": ["index.js"]
+        }
+    ]
+}
