@@ -3,7 +3,7 @@
     "name": "Borderify",
     "version": "1.0",
 
-    "description": "Mozilla tutorial - adds a red border to all webpages matching mozilla.org",
+    "description": "Job Application Assistant - stores application data in browser and pops up while you're filling out applications",
 
     "icons": {
         "48": "icons/border-48.png"
@@ -13,10 +13,8 @@
         {
             "matches": [
                 "*://*.myworkdayjobs.com/*",
-                "*://*.mozilla.org/*",
-                "*://*.youtube.com/*",
-                "*://*.wikipedia.org/*",
-                "*://*.github.com/*"
+                "*://*.jobvite.com/*",
+                "*://*.greenhouse.com/*"
             ],
             "js": ["index.js"]
         }
