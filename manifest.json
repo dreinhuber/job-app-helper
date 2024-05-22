@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Borderify",
     "version": "1.0",
 
@@ -10,7 +10,7 @@
     },
 
     "homepage_url": "https://github.com/dreinhuber/job-app-helper",
-    "browser_action": {
+    "action": {
         "default_popup": "public/index.html",
         "default_title": "Job App Helper",
         "default_icon": "icons/border-48.png"
