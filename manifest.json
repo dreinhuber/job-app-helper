@@ -12,11 +12,16 @@
     "content_scripts": [
         {
             "matches": [
-                "*://*.myworkdayjobs.com/*",
-                "*://*.jobvite.com/*",
-                "*://*.greenhouse.com/*"
+                "*://*.myworkdayjobs.com/*"
             ],
-            "js": ["index.js"]
+            "js": ["workday.js"]
+        },
+        {
+            "matches": [
+                "*://*.greenhouse.com/*",
+                "*://*.jobvite.com/*"
+            ],
+            "js": ["single-page.js"]
         }
     ]
 }

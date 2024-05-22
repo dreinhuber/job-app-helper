@@ -1,3 +1,6 @@
+// this script specifically works for workday job applications
+// other, step-based application sites may have similar scripts
+
 document.body.style.border = "5px solid red";
 
 const WORKDAY_STEPS = [
