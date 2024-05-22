@@ -9,19 +9,10 @@
         "48": "icons/border-48.png"
     },
 
-    "content_scripts": [
-        {
-            "matches": [
-                "*://*.myworkdayjobs.com/*"
-            ],
-            "js": ["workday.js"]
-        },
-        {
-            "matches": [
-                "*://*.greenhouse.com/*",
-                "*://*.jobvite.com/*"
-            ],
-            "js": ["single-page.js"]
-        }
-    ]
+    "homepage_url": "https://github.com/dreinhuber/job-app-helper",
+    "browser_action": {
+        "default_popup": "public/index.html",
+        "default_title": "Job App Helper",
+        "default_icon": "icons/border-48.png"
+    }
 }
