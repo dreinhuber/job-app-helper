@@ -17,7 +17,7 @@ const ApplicantForm = ({setPage}) => {
     }
 
     const storeApplicantInfo = e => {
-        const {className: key, value} = e.target;
+        const {id: key, value} = e.target;
 
         let updatedInfo = applicantInfo;
         updatedInfo[key] = value;
