@@ -31,5 +31,9 @@ A form that lets the user input the usual information required by a job applicat
 #### Other Ideas/post MVP:
 - maybe automate some of the filling out - this sort of happens anyway if personal info is stored in browser, but it could be cool to automatically upload a resume, automatically fill in work experience, etc.
     - this should probably come with a feature that marks form elements that maybe aren't certain to have been copied over properly by adding a red border around those input fields.
+ 
+
+# Issues:
+Webpack is running into space issues - main is getting bloated. I think it may have to do with the way I'm passing the full applicant info to every input component? Not 100% but I may be able to use the useContext hook to offload some of this - there's no reason to be doing this anyway.
 
 
