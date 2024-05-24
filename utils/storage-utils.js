@@ -33,15 +33,29 @@ export function checkOrCreateDataStoreKey () {
     storage = window['localStorage'];
     if (!storage.getItem(DATA_STORE_NAME)) {
         console.log('Creating Applicant Info Storage Key!')
-        storage.setItem(DATA_STORE_NAME, {});
+        storage.setItem(DATA_STORE_NAME, JSON.stringify({}));
     } else {
         console.log('Applicant Info Storage Key Found!');
     }
 }
 
 export function getDataStore () {
-    return window['localStorage'][DATA_STORE_NAME];
+    const ds = window['localStorage'][DATA_STORE_NAME];
+    return JSON.parse(ds);
 }
+
+export function readFromDataStore (key) {
+    const ds = getDataStore();
+    return ds[key];
+}
+
+export function writeToDataStore (key, value) {
+    const storage = window['localStorage']
+    const ds = getDataStore();
+    ds[key] = value;
+    storage.setItem(DATA_STORE_NAME, JSON.stringify(ds));
+}
+
 // export function checkOrCreateIndexedDb () {
 //     let storage;
 //     try {

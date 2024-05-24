@@ -3,12 +3,17 @@ import React from "react";
 export const SingleLineInput = ({
     label,
     storageId,
-    handleInput
+    handleInput,
+    info
 }) => {
     return (
         <>
             <label onChange={handleInput}>{label}
-            <input className={storageId} type="text" />
+            <input
+                className={storageId}
+                type="text"
+                value={info[storageId]}
+            />
             </label>
         </>
     )
@@ -17,12 +22,17 @@ export const SingleLineInput = ({
 export const TextAreaInput = ({
     label,
     storageId,
-    handleInput
+    handleInput,
+    info
 }) => {
     return (
         <>
             <label onChange={handleInput}>{label}
-            <textarea className={storageId} type="text"/>
+            <textarea
+                className={storageId}
+                type="text"
+                value={info[storageId]}
+            />
             </label>
         </>
     )

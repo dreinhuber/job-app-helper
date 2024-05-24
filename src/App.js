@@ -6,7 +6,11 @@ import LandingPage from "./landing-page";
 import ApplicantForm from "../components/applicant-form";
 import FillInHelper from "../components/fill-in-helper";
 import OuterFrame from "../components/outer-frame";
-import { storageAvailable, checkOrCreateDataStoreKey } from "../utils/storage-utils";
+import {
+    storageAvailable,
+    checkOrCreateDataStoreKey,
+    getDataStore
+} from "../utils/storage-utils";
 
 
 const App = () => {
@@ -19,6 +23,8 @@ const App = () => {
     } else {
         checkOrCreateDataStoreKey();
     }
+
+    const store = getDataStore();
 
     function renderPage () {
         switch (page) {
