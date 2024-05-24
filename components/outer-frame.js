@@ -3,13 +3,13 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     background-color: #414766ff;
-    height: 490px;
-    width: 400px;
+    height: 590px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     overflow: scroll;
-    padding: 1cqh 1cqw;
+    padding: 2cqh 2cqw;
     font-family: monospace;
 `;
 
