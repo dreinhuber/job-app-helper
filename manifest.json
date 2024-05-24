@@ -14,5 +14,6 @@
         "default_popup": "public/index.html",
         "default_title": "Job App Helper",
         "default_icon": "icons/border-48.png"
-    }
+    },
+    "permissions": ["storage"]
 }

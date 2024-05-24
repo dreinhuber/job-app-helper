@@ -14,10 +14,10 @@ const LandingPage = ({setPage}) => {
     }
 
     return (
-        <Index>
+        <>
             <CustomButton onClick={()=>togglePage('applicant-form')}>Applicant Info</CustomButton>
             <CustomButton onClick={()=>togglePage('fill-in-helper')}>Fill-In Helper</CustomButton>
-        </Index>
+        </>
     )
 }
 

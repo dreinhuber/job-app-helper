@@ -4,11 +4,13 @@ import styled from 'styled-components';
 const Button = styled.button`
     background-color: #c691e9ff;
     color: white;
-    padding: 10px 20px;
-    margin-top: 10px;
+    font-size: 3em;
+    padding:  10cqh 2cqw;
+    margin-top: 2cqh 2cqw;
     border: none;
     cursor: pointer;
     display: block;
+    font-family: monospace;
 `;
 
 const CustomButton = ({ onClick, children }) => {
